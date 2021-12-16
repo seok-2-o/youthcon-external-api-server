@@ -4,9 +4,12 @@ import java.util.UUID;
 
 public final class GiftResultResponse {
 
-    private final String id;
-    private final Long amount;
-    private final String status;
+    private String id;
+    private Long amount;
+    private String status;
+
+    public GiftResultResponse() {
+    }
 
     public GiftResultResponse(String id, Long amount, String status) {
         this.id = id;

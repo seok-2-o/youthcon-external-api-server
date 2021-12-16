@@ -21,7 +21,7 @@ public class GiftController {
     @PostMapping("/apis/v1/send")
     public ResponseEntity<GiftResultResponse> send(@RequestBody SendGiftCommand command) {
         return ResponseEntity.created(URI.create("/"))
-            .build();
+            .body(giftService.send(command));
     }
 
 }

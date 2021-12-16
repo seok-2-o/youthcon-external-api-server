@@ -22,7 +22,7 @@ public class GiftAcceptanceTest {
     private TestRestTemplate template;
 
     @Test
-    @DisplayName("금액과 받는사람을 선택하 선물을 요청한다.")
+    @DisplayName("금액과 받는사람을 선택하여 선물을 요청한다.")
     public void send() {
         //given
         String payload = "{\"number\":\"01091658447\", \"amount\": 10000}";
